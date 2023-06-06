@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 16, in script
+    image bg empty_desk = im.Scale("bg/placeholders/emptydesk.jpg")
+  File "game/script.rpy", line 16, in <module>
+    image bg empty_desk = im.Scale("bg/placeholders/emptydesk.jpg")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 16, in script
+    image bg empty_desk = im.Scale("bg/placeholders/emptydesk.jpg")
+  File "C:\Users\Nate\Downloads\renpy8\renpy-8.1.0-sdk.7z\renpy-8.1.0-sdk\renpy\ast.py", line 1237, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Nate\Downloads\renpy8\renpy-8.1.0-sdk.7z\renpy-8.1.0-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 16, in <module>
+    image bg empty_desk = im.Scale("bg/placeholders/emptydesk.jpg")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.0.23051307
+vcup 1.0
+Tue Jun  6 00:28:01 2023
